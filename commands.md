@@ -6,10 +6,26 @@
 >$ sudo /opt/lampp/lampp start/stop/restart
 
 ##Stop Mysql / Arch disto
->s udo systemctl stop mysql
+>$ sudo systemctl stop mysql
+
+##Find and kill and open port
+>$ sudo netstat -nap | grep :443 || 80
+>$ sudo kill {port}
 
 ##To write a text down using the command line
->$ echo 'Hello world' > indec.php
+>$ echo 'Hello world' > index.php
 
-##o show up what's inside the file
+##Show up what's inside the file
 >$ cat index.php
+
+##Deal with the conda env
+	- Start the env
+>$ conda activate
+	- Stop the env
+>$ conda deactivate
+	- Start the project env
+>$ source project/bin/activate\n
+
+
+
+chrome://flags/#disable-webrtc-hw-decoding
